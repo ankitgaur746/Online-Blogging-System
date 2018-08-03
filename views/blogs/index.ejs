@@ -1,0 +1,34 @@
+<% include ../partials/header %>
+
+<div class="container">
+    
+    <div class="container">    
+             <header class="jumbotron">
+                 <h1><i class="fa fa-home" aria-hidden="true"></i> Welcome to Blogify</h1> 
+                 <p>a place where words matter</p>
+                 
+                 <p>
+                     <a class = "btn btn-primary btn-lg" href="/blogs/new"><i class="fa fa-plus" aria-hidden="true"></i> add new post</a>
+                 </p>
+             </header>
+     </div>
+        <div class="row container text-center" style ="display:flex ; flex-wrap : wrap ;">
+            <% blogs.forEach(function(blogs){%>
+          
+            <div class="col-md-3 col-sm-6 ">
+                <div class="thumbnail caption">
+                       <img src = " <%= blogs.image %> " ></img>
+                       <h4> <%= blogs.name %> </h4>
+                       <a href="/blogs/<%=blogs._id %>"  class = "btn  btn-primary ">
+                           <i class="fa fa-hand-o-up" aria-hidden="true"></i> more info</a>
+                </div>
+                  
+                 
+             
+            </div>
+            
+        <% }); %>
+       </div>
+</div>
+
+<% include ../partials/footer %>
