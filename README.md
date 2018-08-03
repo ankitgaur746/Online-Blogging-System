@@ -1,5 +1,5 @@
 # Online-Blogging-System
-blogify -  a simple website to express your views and ideas built in Node.js
+blogify -  a simple website to express your views and ideas with images built in Node.js
 
 See it in action here.
 
