@@ -17,7 +17,8 @@ Start mongodb database (we created a folder db for this purpose)
 
 mongod --dbpath=./db
 
-Start the project by command 
+Start the project by command by opening another terminal.
+
 
 node app.js
 
