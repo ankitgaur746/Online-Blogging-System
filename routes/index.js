@@ -33,7 +33,7 @@ router.get("/",function(req , res){
          else{
              passport.authenticate("local")(req,res,function(){
                   req.flash("success","Thanks for signing up here") ;
-                  res.redirect("/blog");
+                  res.redirect("/blogs");
              });
          }
     } ) ;
